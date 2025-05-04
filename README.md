@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Antonex/productPreviewChallenge)
-- Live Site URL: [Add live site URL here]()
+- Live Site URL: [Live Website](https://antonex.github.io/productPreviewChallenge/)
 
 ## My process
 
@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-Learned how to use media queries properly, improved my understaning of it and look to improve even further
+# Learned how to use media queries properly, improved my understaning of it and look to improve even further
 
 ```css
 @media screen and (max-width: 790px) {
