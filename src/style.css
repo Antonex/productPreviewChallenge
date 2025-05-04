@@ -1,0 +1,176 @@
+/* Importing Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Required variables for the theme  */
+:root {
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the body and setting the default font */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--Cream);
+  user-select: none;
+}
+
+.container {
+  display: flex;
+}
+
+.container .prod_img img {
+  height: 30rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.prod_details_shared {
+  padding: 2rem 3rem 2rem 2rem;
+  background-color: var(--White);
+  height: 30rem;
+  width: 20rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container .prod_details {
+  padding: 2rem 3rem 2rem 2rem;
+  background-color: var(--White);
+  height: 30rem;
+  width: 20rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.container .prod_details .prod_type {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-weight: 400;
+  color: var(--Grey);
+}
+
+.container .prod_details .prod_name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.container .prod_details .prod_desc {
+  font-size: 0.9rem;
+  color: var(--Grey);
+  font-weight: 600;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.container .prod_details .prod_price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: var(--Green-500);
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.container .prod_details .prod_price sup {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--Grey);
+  margin: 0 0 0 1rem;
+  text-decoration: line-through;
+}
+
+button {
+  width: 100%;
+  background-color: var(--Green-500);
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  color: var(--White);
+  cursor: pointer;
+}
+
+button > img {
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--Green-700);
+}
+
+/* This media querie is for tablets */
+@media screen and (max-width: 790px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    height: auto;
+    width: auto;
+    background-color: var(--White);
+    border-radius: 1rem;
+  }
+
+  .container .prod_img img {
+    height: 20rem;
+    width: 25rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .container .prod_details {
+    padding: 2rem 3rem 2rem 2rem;
+    background-color: var(--White);
+    height: auto;
+    width: 25rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+/* Media queries for mobiles and making the page look good generally for smaller devices */
+@media screen and (max-width: 500px) {
+  .container .prod_img img {
+    height: 15rem;
+    width: 20rem;
+  }
+
+  .container .prod_details {
+    padding: 2rem 3rem 2rem 2rem;
+    background-color: var(--White);
+    height: auto;
+    width: 20rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .prod_img img {
+    height: 12rem;
+    width: 18rem;
+  }
+
+  .container .prod_details {
+    padding: 2rem 3rem 2rem 2rem;
+    background-color: var(--White);
+    height: auto;
+    width: 18rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
